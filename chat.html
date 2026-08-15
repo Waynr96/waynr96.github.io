@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Develop an idea · CreatorPilot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell" data-page="chat">
+    <aside id="sidebar"></aside>
+    <div class="main-shell">
+      <header id="topbar"></header>
+      <main class="chat-layout">
+        <section class="chat-main">
+          <div class="chat-thread">
+            <div class="row-between" style="margin-bottom:26px">
+              <div><p class="eyebrow" style="margin-bottom:5px">Draft conversation</p><h2 class="section-title">Why are AI agents moving into browsers?</h2></div>
+              <span class="badge fill-amber no-dot">Auto-saved</span>
+            </div>
+
+            <article class="message user">
+              <span class="message-avatar">LC</span>
+              <div class="message-body"><strong>You</strong><p>I want to make a short explainer about why AI agents are suddenly moving into browsers, but I'm not sure what the strongest angle is.</p></div>
+            </article>
+            <article class="message">
+              <span class="message-avatar">✦</span>
+              <div class="message-body">
+                <strong>CreatorPilot</strong>
+                <p>A strong angle is that the browser is becoming the place where an AI can move from "answering" to "doing" - but the real story is control, not autonomy.</p>
+                <p>I'd frame it around this core point:</p>
+                <div class="insight-box"><strong>Proposed core point</strong><p>Browser agents are useful because they can work across the tools people already use, but they only become trustworthy when users can see, pause and approve their actions.</p></div>
+                <p style="margin-top:13px">Who should this be for?</p>
+                <div class="prompt-row"><button class="prompt-chip" data-toast="Audience set to general AI users">General AI users</button><button class="prompt-chip" data-toast="Audience set to creators">Creators who use AI tools</button><button class="prompt-chip" data-toast="Audience set to developers">Developers evaluating agents</button></div>
+              </div>
+            </article>
+            <article class="message user">
+              <span class="message-avatar">LC</span>
+              <div class="message-body"><strong>You</strong><p>Creators who already use ChatGPT, but don't really understand agents yet. I also want a concrete recent example.</p></div>
+            </article>
+            <article class="message">
+              <span class="message-avatar">✦</span>
+              <div class="message-body">
+                <strong>CreatorPilot</strong>
+                <p>I can search recent English-language news for examples of browser-based agents and visible approval controls.</p>
+                <div class="card card-solid card-pad" style="margin-top:12px">
+                  <div class="row-between"><div><strong style="font-size:13px">Proposed news search</strong><p class="small muted" style="margin:4px 0 0">"browser AI agents user approval controls" · last 30 days · English</p></div><span class="badge lilac">Est. 8 credits</span></div>
+                  <div class="row" style="gap:8px;margin-top:14px"><button class="btn btn-primary btn-sm" data-toast="Search approved · results added below">Approve search</button><button class="btn btn-secondary btn-sm" data-toast="Search settings opened">Edit query</button></div>
+                </div>
+                <div class="info-package" style="margin-top:14px">
+                  <div class="info-row"><span class="check checked">✓</span><div class="copy"><strong>OpenAI expands ChatGPT agent capabilities</strong><span>Event card · 6 sources · official announcement</span></div><span class="badge mint">Relevant</span></div>
+                  <div class="info-row"><span class="check checked">✓</span><div class="copy"><strong>Browser vendors propose local AI permissions</strong><span>Event card · 5 sources · joint proposal</span></div><span class="badge sky">Context</span></div>
+                  <div class="info-row"><span class="check">✓</span><div class="copy"><strong>Opinion: the return of the autonomous web</strong><span>Source card · commentary · one author</span></div><span class="badge">Optional</span></div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <form class="chat-bottom" action="direction.html">
+            <div class="chat-composer">
+              <textarea class="composer-input" aria-label="Reply" placeholder="Reply, ask for another angle, or paste a source..."></textarea>
+              <div class="composer-bottom"><div class="composer-tools"><span class="tool-chip">2 cards selected</span></div><button class="send-button" type="button" data-toast="Message added to the prototype">↑</button></div>
+            </div>
+            <p class="micro faint" style="text-align:center;margin:7px 0 0">CreatorPilot can make mistakes. Review sources before confirming your direction.</p>
+          </form>
+        </section>
+
+        <aside class="chat-side">
+          <div class="direction-mini">
+            <div class="row-between"><h3>Content direction</h3><span class="badge fill-amber no-dot">Draft</span></div>
+            <div class="completion"><span class="completion-ring"></span><span><strong>Almost ready</strong><span>One optional gap remains</span></span></div>
+            <div class="kv-list">
+              <div class="kv"><span>Topic</span><strong>Why AI agents are moving into browsers</strong></div>
+              <div class="kv"><span>Core point</span><strong>Visible control makes browser agents useful and trustworthy</strong></div>
+              <div class="kv"><span>Goal</span><strong>Explain a shift in practical terms</strong></div>
+              <div class="kv"><span>Audience</span><strong>Creators familiar with ChatGPT, new to agents</strong></div>
+              <div class="kv"><span>Content mode</span><strong>Fact / explainer</strong></div>
+              <div class="kv"><span>Information package</span><strong>2 event cards · 11 source records</strong></div>
+            </div>
+            <div class="warning-box" style="margin-top:18px"><strong>Optional gap</strong><p>No independent usage data yet. You can proceed without making adoption claims.</p></div>
+            <a class="btn btn-primary btn-block" style="margin-top:18px" href="direction.html">Review & confirm direction</a>
+          </div>
+          <div class="card card-pad" style="margin-top:14px"><div class="row-between"><div><strong class="small">Credits used</strong><p class="micro muted" style="margin:3px 0 0">Conversation + news search</p></div><strong>12</strong></div></div>
+        </aside>
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

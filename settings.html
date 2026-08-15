@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Settings · CreatorPilot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell" data-page="settings">
+    <aside id="sidebar"></aside>
+    <div class="main-shell">
+      <header id="topbar"></header>
+      <main class="page narrow">
+        <div class="page-heading"><div><p class="eyebrow">Workspace preferences</p><h2>Settings</h2><p>Manage your profile, language, credits and notification preferences.</p></div></div>
+        <div class="settings-layout" data-tab-scope>
+          <nav class="settings-nav" data-tabs aria-label="Settings sections">
+            <button class="active" data-tab="account">Account</button>
+            <button data-tab="language">Language & output</button>
+            <button data-tab="notifications">Notifications</button>
+            <button data-tab="credits">Credits & usage</button>
+            <button data-tab="data">Data & privacy</button>
+          </nav>
+          <div>
+            <section class="card card-solid settings-section tab-panel active" data-panel="account">
+              <h3>Account</h3><p>Your personal profile and sign-in details.</p>
+              <div class="setting-row"><div class="setting-copy"><strong>Profile</strong><span>Lee Creator · lee@creator.studio</span></div><button class="btn btn-secondary btn-sm" data-toast="Profile editor opened">Edit</button></div>
+              <div class="setting-row"><div class="setting-copy"><strong>Password</strong><span>Last changed 42 days ago</span></div><button class="btn btn-secondary btn-sm" data-toast="Password change opened">Change</button></div>
+              <div class="setting-row"><div class="setting-copy"><strong>Connected account</strong><span>Google · lee@creator.studio</span></div><span class="badge mint">Connected</span></div>
+              <div class="setting-row"><div class="setting-copy"><strong>Sign out</strong><span>Sign out of this browser session.</span></div><a class="btn btn-secondary btn-sm" href="login.html">Sign out</a></div>
+            </section>
+            <section class="card card-solid settings-section tab-panel" data-panel="language">
+              <h3>Language & output</h3><p>Interface language is independent from generated content language.</p>
+              <div class="setting-row"><div class="setting-copy"><strong>Interface language</strong><span>Navigation, controls and product guidance.</span></div><select class="select" style="width:170px"><option>English</option><option>简体中文</option></select></div>
+              <div class="setting-row"><div class="setting-copy"><strong>Default output language</strong><span>Used when creating a new direction.</span></div><select class="select" style="width:170px"><option>English</option><option>简体中文</option></select></div>
+              <div class="setting-row"><div class="setting-copy"><strong>Translate event summaries on demand</strong><span>Original source titles and links always remain unchanged.</span></div><button class="toggle on" aria-label="Translate on demand"></button></div>
+            </section>
+            <section class="card card-solid settings-section tab-panel" data-panel="notifications">
+              <h3>Notifications</h3><p>MVP notifications appear inside CreatorPilot only.</p>
+              <div class="setting-row"><div class="setting-copy"><strong>Task completed</strong><span>When a confirmed search or generation task finishes.</span></div><button class="toggle on"></button></div>
+              <div class="setting-row"><div class="setting-copy"><strong>Waiting for review</strong><span>When your decision is required to continue.</span></div><button class="toggle on"></button></div>
+              <div class="setting-row"><div class="setting-copy"><strong>Event updates</strong><span>When a source event used by a project materially changes.</span></div><button class="toggle on"></button></div>
+              <div class="setting-row"><div class="setting-copy"><strong>Source failures</strong><span>When a scheduled refresh or link read partly fails.</span></div><button class="toggle"></button></div>
+            </section>
+            <section class="card card-solid settings-section tab-panel" data-panel="credits">
+              <h3>Credits & usage</h3><p>Estimates appear before every paid action; actual usage is recorded afterward.</p>
+              <div class="card card-pad" style="margin-bottom:18px"><div class="row-between"><div><span class="small muted">AVAILABLE THIS MONTH</span><strong style="display:block;font-size:34px;margin-top:4px">680 credits</strong></div><button class="btn btn-primary" data-toast="Plan details opened">Manage plan</button></div><div class="meter" style="height:7px"><i></i></div><span class="micro muted">320 used · renews in 12 days</span></div>
+              <div class="setting-row"><div class="setting-copy"><strong>News and Web Search</strong><span>9 actions this month</span></div><strong class="small">84 credits</strong></div>
+              <div class="setting-row"><div class="setting-copy"><strong>X Post generation</strong><span>8 deliveries and 3 regenerations</span></div><strong class="small">112 credits</strong></div>
+              <div class="setting-row"><div class="setting-copy"><strong>Short-form video packages</strong><span>4 packages and 2 partial regenerations</span></div><strong class="small">124 credits</strong></div>
+            </section>
+            <section class="card card-solid settings-section tab-panel" data-panel="data">
+              <h3>Data & privacy</h3><p>Control exports and deletion. Confirmed project history remains versioned until removed.</p>
+              <div class="setting-row"><div class="setting-copy"><strong>Export workspace data</strong><span>Projects, sources, directions, deliveries and usage history.</span></div><button class="btn btn-secondary btn-sm" data-toast="Export request started">Request export</button></div>
+              <div class="setting-row"><div class="setting-copy"><strong>Clear conversation drafts</strong><span>Deletes only unconfirmed exploratory conversations.</span></div><button class="btn btn-secondary btn-sm" data-toast="Draft cleanup confirmation opened">Review drafts</button></div>
+              <div class="setting-row"><div class="setting-copy"><strong>Delete account</strong><span>Permanently removes your workspace after confirmation.</span></div><button class="btn btn-danger btn-sm" data-toast="Account deletion confirmation opened">Delete account</button></div>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
+

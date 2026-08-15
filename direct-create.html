@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Start directly · CreatorPilot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell" data-page="direct">
+    <aside id="sidebar"></aside>
+    <div class="main-shell">
+      <header id="topbar"></header>
+      <main class="page compact">
+        <div class="page-heading">
+          <div><p class="eyebrow">Direct creation</p><h2>Bring the idea you already have</h2><p>Paste a rough thought, an existing draft or source links. We'll structure it into a content direction for you to review.</p></div>
+        </div>
+        <div class="stepper">
+          <div class="step active"><span class="step-num">1</span>Add materials</div>
+          <div class="step"><span class="step-num">2</span>Review direction</div>
+          <div class="step"><span class="step-num">3</span>Choose output</div>
+        </div>
+
+        <section class="card card-solid card-lg card-pad">
+          <div class="field">
+            <div class="row-between"><label for="idea">Your idea, draft or notes</label><span class="small faint">Auto-saved</span></div>
+            <textarea class="textarea" id="idea" style="min-height:210px">I want to explain why browser-based AI agents are different from ordinary chatbots. The important point is not that they are more autonomous - it is that users can see and approve actions. This should help creators who already use ChatGPT understand what changes when an AI can work across tabs.</textarea>
+            <span class="hint">CreatorPilot will not generate deliverables until you review and confirm the extracted direction.</span>
+          </div>
+          <div class="divider"></div>
+          <div class="field">
+            <label for="link">Add web links</label>
+            <div class="row" style="gap:9px"><input class="input" id="link" value="https://openai.com/index/introducing-agent-mode/"><button class="btn btn-secondary btn-sm link-add-button">Add link</button></div>
+          </div>
+          <div class="info-package" style="margin-top:14px">
+            <div class="info-row"><span class="source-logo" aria-label="OpenAI"><img src="https://openai.com/favicon.ico" alt=""></span><div class="copy"><strong>Introducing agent mode</strong><span>openai.com · Full page read · English</span></div><span class="badge mint">Read</span><button class="btn btn-sm btn-soft" data-toast="Link removed">×</button></div>
+            <div class="info-row"><span class="source-logo" aria-label="The Verge"><img src="https://www.theverge.com/favicon.ico" alt=""></span><div class="copy"><strong>How browser agents change everyday workflows</strong><span>theverge.com · Summary only · English</span></div><span class="badge amber">Partial</span><button class="btn btn-sm btn-soft" data-toast="Link removed">×</button></div>
+            <div class="info-row"><span class="source-logo source-logo-locked" aria-label="Source requires sign-in">!</span><div class="copy"><strong>Report behind sign-in</strong><span>Access failed · Paste the relevant text instead</span></div><span class="badge danger">Failed</span><button class="btn btn-sm btn-soft" data-toast="Retry queued">Retry</button></div>
+          </div>
+          <div class="warning-box" style="margin-top:16px"><strong>One link needs attention</strong><p>CreatorPilot will not bypass a sign-in or paywall. You can remove the link or paste text you have permission to use.</p></div>
+        </section>
+
+        <section class="card card-pad" style="margin-top:18px">
+          <div class="row-between"><div><strong style="font-size:13px">Want help filling gaps?</strong><p class="small muted" style="margin:3px 0 0">Move this draft into an AI conversation without losing your inputs.</p></div><a class="btn btn-secondary btn-sm" href="chat.html">Continue with AI</a></div>
+        </section>
+
+        <div class="sticky-actions">
+          <p>Extracting the direction is estimated at 4 credits. No output content will be generated yet.</p>
+          <div class="actions"><a class="btn btn-secondary" href="index.html">Save & exit</a><a class="btn btn-primary" href="direction.html">Extract content direction →</a></div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

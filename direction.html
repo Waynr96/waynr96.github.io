@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Confirm content direction · CreatorPilot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell" data-page="direction">
+    <aside id="sidebar"></aside>
+    <div class="main-shell">
+      <header id="topbar"></header>
+      <main class="page compact">
+        <div class="page-heading">
+          <div><p class="eyebrow">Shared checkpoint</p><h2>Confirm your content direction</h2><p>This direction becomes the source of truth for every output in the project. Platform, style and duration come next.</p></div>
+          <span class="badge fill-amber no-dot">Draft v1</span>
+        </div>
+        <div class="stepper">
+          <div class="step done"><span class="step-num">✓</span>Add materials</div>
+          <div class="step active"><span class="step-num">2</span>Review direction</div>
+          <div class="step"><span class="step-num">3</span>Choose output</div>
+        </div>
+
+        <div class="split-73">
+          <section class="card card-solid card-lg card-pad stack-lg">
+            <div class="field"><label for="topic">Topic</label><input class="input" id="topic" value="Why AI agents are moving into browsers"></div>
+            <div class="field"><label for="point">Core point</label><textarea class="textarea" id="point">Browser agents become useful when they can act across the tools people already use, but they become trustworthy only when users can see, pause and approve those actions.</textarea></div>
+            <div class="grid grid-2">
+              <div class="field"><label for="goal">Creation goal</label><select class="select" id="goal"><option>Explain a shift clearly</option><option>Report a recent event</option><option>Express an opinion</option><option>Entertain</option></select></div>
+              <div class="field"><label for="language">Output language</label><select class="select" id="language"><option>English</option><option>简体中文</option></select></div>
+            </div>
+            <div class="field">
+              <label>Audience</label>
+              <div class="grid grid-2" data-choice-group>
+                <label class="choice-card card"><input type="radio" name="audience"><span class="check-dot">✓</span><h3>General audience</h3><p>Assume no specialist background.</p></label>
+                <label class="choice-card card selected"><input type="radio" name="audience" checked><span class="check-dot">✓</span><h3>Specific audience</h3><p>Creators who use ChatGPT but are new to agents.</p></label>
+              </div>
+            </div>
+            <div class="field"><label for="audience-detail">Audience detail</label><input class="input" id="audience-detail" value="Independent creators who use ChatGPT weekly and want practical examples without developer jargon"></div>
+            <div class="field">
+              <label>Content mode</label>
+              <div class="grid grid-3" data-choice-group>
+                <label class="choice-card card selected" style="padding:16px"><input type="radio" name="mode" checked><span class="check-dot">✓</span><h3 style="font-size:14px">Fact / explainer</h3><p>Factual claims should stay linked to sources.</p></label>
+                <label class="choice-card card" style="padding:16px"><input type="radio" name="mode"><span class="check-dot">✓</span><h3 style="font-size:14px">Opinion / commentary</h3><p>Arguments may be yours; supporting facts need sources.</p></label>
+                <label class="choice-card card" style="padding:16px"><input type="radio" name="mode"><span class="check-dot">✓</span><h3 style="font-size:14px">Fiction / creative</h3><p>Clearly presented as invented or creative.</p></label>
+              </div>
+            </div>
+          </section>
+
+          <aside class="stack">
+            <section class="card card-solid card-pad">
+              <div class="row-between"><h3 class="section-title" style="font-size:16px">Information package</h3><button class="btn btn-soft btn-sm" data-toast="Add materials opened">＋ Add</button></div>
+              <div class="info-package" style="margin-top:15px">
+                <div class="info-row"><span class="check checked">✓</span><div class="copy"><strong>OpenAI agent mode event</strong><span>6 sources · official + 2 likely independent</span></div></div>
+                <div class="info-row"><span class="check checked">✓</span><div class="copy"><strong>Browser AI permissions proposal</strong><span>5 sources · contextual example</span></div></div>
+                <div class="info-row"><span class="check checked">✓</span><div class="copy"><strong>Your original notes</strong><span>124 words · user material</span></div></div>
+              </div>
+              <a class="text-link" href="event-detail.html" style="display:inline-block;margin-top:14px">Review all evidence →</a>
+            </section>
+            <div class="insight-box"><strong>Direction is complete</strong><p>Topic, point, goal, audience and sources are defined. You can continue without making unsupported adoption claims.</p></div>
+            <div class="warning-box"><strong>Not an automated fact-check</strong><p>Source status and uncertainty will remain visible, but CreatorPilot will not block your wording in this MVP.</p></div>
+            <section class="card card-pad">
+              <div class="row-between"><div><strong class="small">Version impact</strong><p class="micro muted" style="margin:3px 0 0">No prior outputs exist</p></div><span class="badge mint">Safe to confirm</span></div>
+            </section>
+          </aside>
+        </div>
+
+        <div class="sticky-actions">
+          <p>Confirming creates a formal project. Later changes create a new direction version instead of overwriting this one.</p>
+          <div class="actions"><button class="btn btn-secondary" data-toast="Draft saved">Save draft</button><a class="btn btn-primary" href="output-select.html">Confirm content direction →</a></div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
+

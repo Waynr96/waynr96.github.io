@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home · CreatorPilot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell" data-page="home">
+    <aside id="sidebar"></aside>
+    <div class="main-shell">
+      <header id="topbar"></header>
+      <main class="page">
+        <section class="hero-home">
+          <div class="hello">
+            <p class="eyebrow">Saturday, August 15</p>
+            <h2>What would you like to create today?</h2>
+            <p>Enter an idea, topic or question. We'll help turn it into a clear, sourced content direction.</p>
+          </div>
+          <form class="chat-composer" action="chat.html">
+            <textarea class="composer-input" aria-label="What would you like to create?" placeholder="Describe an idea, paste a link, or ask me to find recent news..."></textarea>
+            <div class="composer-bottom only-send">
+              <button class="send-button" type="submit" aria-label="Send">↑</button>
+            </div>
+          </form>
+          <div class="prompt-row" aria-label="Suggested prompts">
+            <button class="prompt-chip" data-fill-prompt>Find recent AI news for me</button>
+            <button class="prompt-chip" data-fill-prompt>Help me develop a rough topic</button>
+            <button class="prompt-chip" data-fill-prompt>I want to express an opinion</button>
+          </div>
+        </section>
+
+        <div class="grid grid-2">
+          <a class="card hover-card quick-action" href="direct-create.html">
+            <span class="quick-icon coral">＋</span>
+            <span class="quick-copy"><strong>Start creating directly</strong><span>Already know what to make? Add your idea, draft and links.</span></span>
+            <span>→</span>
+          </a>
+          <a class="card hover-card quick-action" href="history.html">
+            <span class="quick-icon sky">↺</span>
+            <span class="quick-copy"><strong>Continue your latest project</strong><span>"Why AI agents are moving into browsers" · script ready</span></span>
+            <span>→</span>
+          </a>
+        </div>
+
+        <div class="section-head">
+          <div><h3>Recent events for you</h3><p>Not sure what to create? Start from an event we've grouped and checked.</p></div>
+          <a class="text-link" href="events.html">View all 24 events →</a>
+        </div>
+        <section class="grid grid-3">
+          <article class="card card-solid event-card hover-card">
+            <div class="event-meta"><span class="badge mint">Multiple sources</span><span class="micro faint mono">8m ago</span></div>
+            <h4>OpenAI expands ChatGPT agent capabilities for multi-step web tasks</h4>
+            <p>New controls let users supervise longer-running tasks while keeping source actions visible.</p>
+            <div class="reason"><b>✦</b><span>Strong fit for your AI agents topic and beginner audience.</span></div>
+            <div class="event-stats"><span>6 sources</span><span>2 independent</span><span>Official post</span></div>
+            <div class="event-actions"><a class="btn btn-secondary btn-sm" href="event-detail.html">View event</a><a class="btn btn-primary btn-sm" href="direction.html">Create</a></div>
+          </article>
+          <article class="card card-solid event-card hover-card">
+            <div class="event-meta"><span class="badge amber">Developing</span><span class="micro faint mono">36m ago</span></div>
+            <h4>New open model claims stronger on-device reasoning at lower cost</h4>
+            <p>The release is public, but independent benchmark reproduction is still limited.</p>
+            <div class="reason"><b>✦</b><span>Potential explainer: what the benchmark does and does not prove.</span></div>
+            <div class="event-stats"><span>4 sources</span><span>1 first-party</span><span>1 conflict</span></div>
+            <div class="event-actions"><a class="btn btn-secondary btn-sm" href="event-detail.html">View event</a><a class="btn btn-primary btn-sm" href="direction.html">Create</a></div>
+          </article>
+          <article class="card card-solid event-card hover-card">
+            <div class="event-meta"><span class="badge sky">Official response</span><span class="micro faint mono">2h ago</span></div>
+            <h4>Design platform responds to creator concerns about AI training controls</h4>
+            <p>The company clarified opt-out controls after an earlier policy update drew criticism.</p>
+            <div class="reason"><b>✦</b><span>A balanced update with a clear before-and-after narrative.</span></div>
+            <div class="event-stats"><span>8 sources</span><span>3 perspectives</span><span>Updated</span></div>
+            <div class="event-actions"><a class="btn btn-secondary btn-sm" href="event-detail.html">View event</a><a class="btn btn-primary btn-sm" href="direction.html">Create</a></div>
+          </article>
+        </section>
+
+        <div class="section-head"><div><h3>Your production desk</h3><p>Items that are ready for your next decision.</p></div></div>
+        <section class="grid grid-3">
+          <a class="card card-pad hover-card" href="video-delivery.html">
+            <div class="row-between"><span class="badge coral">Needs review</span><span class="small faint">2m</span></div>
+            <h4 style="margin:17px 0 6px">Why AI agents are moving into browsers</h4>
+            <p class="small muted">The 45-second script is ready. Confirm it to generate captions and shot suggestions.</p>
+          </a>
+          <a class="card card-pad hover-card" href="project.html">
+            <div class="row-between"><span class="badge sky">Event updated</span><span class="small faint">18m</span></div>
+            <h4 style="margin:17px 0 6px">Open-source video models are closing the gap</h4>
+            <p class="small muted">Two facts changed after your last confirmed version. Compare before regenerating.</p>
+          </a>
+          <a class="card card-pad hover-card" href="x-delivery.html">
+            <div class="row-between"><span class="badge mint">Ready</span><span class="small faint">Yesterday</span></div>
+            <h4 style="margin:17px 0 6px">What the new model benchmark really measures</h4>
+            <p class="small muted">Your X Post is ready to copy. Sources remain attached to the delivery card.</p>
+          </a>
+        </section>
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

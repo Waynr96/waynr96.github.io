@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in · CreatorPilot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="auth-shell" data-page="login" data-auth="true">
+    <section class="auth-art">
+      <div class="brand"><span class="brand-mark"></span><span>CreatorPilot</span></div>
+      <div class="auth-quote">
+        <p class="eyebrow">Evidence-first creation workspace</p>
+        <h1>From a news event<br>to an edit-ready story.</h1>
+        <p>Research, verify, write and plan with specialist AI agents - while every source and final decision stays visible to you.</p>
+      </div>
+      <div class="evidence-ribbon" aria-label="Sources become an edit-ready package">
+        <div class="ribbon-node"><span class="ribbon-dot">01</span><span>Sources</span></div>
+        <div class="ribbon-node"><span class="ribbon-dot">02</span><span>Direction</span></div>
+        <div class="ribbon-node"><span class="ribbon-dot">03</span><span>Review</span></div>
+        <div class="ribbon-node"><span class="ribbon-dot">04</span><span>Delivery</span></div>
+      </div>
+    </section>
+    <section class="auth-panel">
+      <div class="auth-box">
+        <p class="eyebrow">Welcome back</p>
+        <h2>Sign in to your workspace</h2>
+        <p>Your drafts, sources and delivery cards will be waiting where you left them.</p>
+        <button class="oauth-button" data-toast="Google sign-in would open here"><span class="strong">G</span> Continue with Google</button>
+        <div class="or">or continue with email</div>
+        <form class="stack" action="index.html">
+          <div class="field">
+            <label for="email">Email address</label>
+            <input class="input" id="email" type="email" value="lee@creator.studio" autocomplete="email">
+          </div>
+          <div class="field">
+            <div class="row-between"><label for="password">Password</label><a class="text-link" href="#">Forgot password?</a></div>
+            <input class="input" id="password" type="password" value="creatorpilot" autocomplete="current-password">
+          </div>
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Sign in</button>
+        </form>
+        <p class="legal">By continuing, you agree to CreatorPilot's Terms and Privacy Policy.</p>
+        <p class="small muted" style="text-align:center;margin-top:22px">New to CreatorPilot? <a class="text-link" href="onboarding.html">Create an account</a></p>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

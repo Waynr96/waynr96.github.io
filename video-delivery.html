@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Short-form video package · CreatorPilot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell" data-page="videodelivery">
+    <aside id="sidebar"></aside>
+    <div class="main-shell">
+      <header id="topbar"></header>
+      <main class="page">
+        <div class="page-heading">
+          <div><p class="eyebrow">Short-form video delivery</p><h2>Why AI agents are moving into browsers</h2><p>YouTube Shorts · 45 seconds · Plain-language explainer · Direction v1</p></div>
+          <div class="actions row" style="gap:8px"><button class="btn btn-secondary" data-toast="Package preview opened">Preview package</button><button class="btn btn-primary disabled">Download full package</button></div>
+        </div>
+
+        <div class="agent-rail">
+          <div class="agent-node done"><span class="agent-dot">✓</span><span>Collect</span></div>
+          <div class="agent-node done"><span class="agent-dot">✓</span><span>Analyze</span></div>
+          <div class="agent-node done"><span class="agent-dot">✓</span><span>Verify</span></div>
+          <div class="agent-node active"><span class="agent-dot">04</span><span>Write · review</span></div>
+          <div class="agent-node"><span class="agent-dot">05</span><span>Plan shots</span></div>
+          <div class="agent-node"><span class="agent-dot">06</span><span>Structure</span></div>
+        </div>
+
+        <div class="split-73">
+          <section class="stack">
+            <article class="card card-solid card-lg script-card">
+              <div class="script-toolbar">
+                <div><strong style="font-size:14px">Narration script</strong><span class="badge coral" style="margin-left:8px">Needs review</span></div>
+                <div class="version-bar"><button class="version-pill">v1⌄</button><span class="small muted">108 words · ~44 sec</span></div>
+              </div>
+              <div class="script-lines">
+                <div class="script-line"><span class="timecode">00:00<br>00:07</span><p>AI agents are moving into your browser - but not simply because they can click things for you.</p><span class="shot">OPENING<br>Browser tabs assembling into one workspace.</span></div>
+                <div class="script-line"><span class="timecode">00:07<br>00:16</span><p>The browser is already where your research, documents, email and publishing tools live.</p><span class="shot">CONTEXT<br>Four familiar tool cards connected by a line.</span></div>
+                <div class="script-line"><span class="timecode">00:16<br>00:28</span><p>Put an agent there, and it can move a task across those tools instead of only telling you what to do next.</p><span class="shot">PROCESS<br>A task passes between cards with visible status.</span></div>
+                <div class="script-line flagged"><span class="timecode">00:28<br>00:38</span><p>But the useful part is not unlimited autonomy. It is being able to inspect the plan, approve sensitive steps and stop the run.</p><span class="shot">CONTROL<br>Plan preview, approval gate, pause control.</span></div>
+                <div class="script-line"><span class="timecode">00:38<br>00:45</span><p>That visible control is what turns an AI answer into a workflow you can actually supervise.</p><span class="shot">CLOSE<br>Evidence-to-story ribbon resolves into export files.</span></div>
+              </div>
+              <div class="script-toolbar"><span class="small muted">The highlighted sentence contains the central claim.</span><div class="row" style="gap:7px"><button class="btn btn-secondary btn-sm" data-toast="Script editor opened">Edit directly</button><button class="btn btn-secondary btn-sm" data-toast="Selection regeneration opened">Regenerate selection</button><button class="btn btn-primary btn-sm" data-toast="Script confirmed · downstream cards are now generating">Confirm script</button></div></div>
+            </article>
+
+            <article class="card subcard">
+              <div class="subcard-head"><div><strong>Captions & timing</strong><span class="badge no-dot" style="margin-left:8px">Waiting for script</span></div><span class="small faint">SRT + sentence timing</span></div>
+              <div class="subcard-body"><p class="small muted" style="margin:0">Captions will be generated only after you confirm the narration script, preventing unnecessary regeneration.</p></div>
+            </article>
+            <article class="card subcard">
+              <div class="subcard-head"><div><strong>Light shot guide</strong><span class="badge no-dot" style="margin-left:8px">Waiting for script</span></div><span class="small faint">Visual intent per sentence</span></div>
+              <div class="subcard-body"><p class="small muted" style="margin:0">The guide describes what each sentence should communicate. It will not search for footage or prescribe complex camera moves.</p></div>
+            </article>
+          </section>
+
+          <aside class="stack">
+            <section class="card card-solid card-pad">
+              <div class="row-between"><h3 class="section-title" style="font-size:16px">Review checklist</h3><span class="badge fill-amber no-dot">2 of 5</span></div>
+              <div class="info-package" style="margin-top:15px">
+                <div class="info-row"><span class="check checked">✓</span><div class="copy"><strong>Target duration</strong><span>44 sec within 45 sec target</span></div></div>
+                <div class="info-row"><span class="check checked">✓</span><div class="copy"><strong>Source-linked facts</strong><span>3 claims linked to evidence</span></div></div>
+                <div class="info-row"><span class="check">✓</span><div class="copy"><strong>Script wording reviewed</strong><span>Waiting for your confirmation</span></div></div>
+                <div class="info-row"><span class="check">✓</span><div class="copy"><strong>Captions synchronized</strong><span>Not generated yet</span></div></div>
+                <div class="info-row"><span class="check">✓</span><div class="copy"><strong>Shot guide reviewed</strong><span>Not generated yet</span></div></div>
+              </div>
+            </section>
+            <div class="warning-box"><strong>One source caveat</strong><p>Plan and regional availability vary. The script avoids saying the feature is available to everyone.</p></div>
+            <section class="card card-solid card-pad">
+              <h3 class="section-title" style="font-size:16px">Package files</h3>
+              <div class="file-list" style="margin-top:15px">
+                <div class="file-item"><span class="file-icon">TXT</span><div class="copy"><strong>narration-script.txt</strong><span>Ready after confirmation</span></div></div>
+                <div class="file-item"><span class="file-icon">SRT</span><div class="copy"><strong>captions.srt</strong><span>Waiting</span></div></div>
+                <div class="file-item"><span class="file-icon">CSV</span><div class="copy"><strong>shot-list.csv</strong><span>Waiting</span></div></div>
+                <div class="file-item"><span class="file-icon">MD</span><div class="copy"><strong>sources.md</strong><span>11 source records ready</span></div></div>
+              </div>
+            </section>
+            <section class="card card-pad"><div class="row-between"><div><strong class="small">Credits used</strong><p class="micro muted" style="margin:3px 0 0">Script stage only</p></div><strong>18 / 36</strong></div></section>
+          </aside>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

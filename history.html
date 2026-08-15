@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Creation History · CreatorPilot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell" data-page="history">
+    <aside id="sidebar"></aside>
+    <div class="main-shell">
+      <header id="topbar"></header>
+      <main class="page">
+        <div class="page-heading">
+          <div><p class="eyebrow">Persistent workspace</p><h2>Your creation history</h2><p>Projects appear here after you confirm a content direction. Early exploratory conversations remain separate drafts.</p></div>
+          <div class="actions"><a class="btn btn-primary" href="index.html">＋ New creation</a></div>
+        </div>
+        <section class="stats-grid" style="margin-bottom:22px">
+          <div class="card stat-card"><span>ACTIVE PROJECTS</span><strong>7</strong></div>
+          <div class="card stat-card"><span>AWAITING YOU</span><strong>3</strong></div>
+          <div class="card stat-card"><span>DELIVERIES THIS MONTH</span><strong>18</strong></div>
+          <div class="card stat-card"><span>CREDITS USED</span><strong>320</strong></div>
+        </section>
+        <div class="filter-bar">
+          <input class="input search" type="search" placeholder="Search projects...">
+          <button class="filter-button active">All</button><button class="filter-button">Needs attention</button><button class="filter-button">Completed</button><button class="filter-button">Filters ⌄</button>
+        </div>
+
+        <section class="project-table">
+          <div class="table-row header"><span>Project</span><span>Status</span><span>Outputs</span><span>Updated</span><span></span></div>
+          <a class="table-row" href="project.html"><span class="project-name"><i class="project-symbol source-openai" aria-label="Top source: OpenAI" title="Top source: OpenAI">OA</i><span><strong>Why AI agents are moving into browsers</strong><span>News project · Direction v1 · 11 sources</span></span></span><span class="table-cell"><span class="badge coral">Needs review</span></span><span class="table-cell">Video</span><span class="table-cell">2m ago</span><span class="table-cell">Open →</span></a>
+          <a class="table-row" href="project.html"><span class="project-name"><i class="project-symbol source-hf" aria-label="Top source: Hugging Face" title="Top source: Hugging Face">HF</i><span><strong>Open-source video models are closing the gap</strong><span>News project · Direction v2 · 8 sources</span></span></span><span class="table-cell"><span class="badge sky">Event updated</span></span><span class="table-cell">X + Video</span><span class="table-cell">18m ago</span><span class="table-cell">Open →</span></a>
+          <a class="table-row" href="x-delivery.html"><span class="project-name"><i class="project-symbol free-creation" aria-label="Free creation" title="Free creation">✦</i><span><strong>What the new model benchmark really measures</strong><span>Free creation · Direction v1 · 3 materials</span></span></span><span class="table-cell"><span class="badge mint">Confirmed</span></span><span class="table-cell">X Post</span><span class="table-cell">Yesterday</span><span class="table-cell">Open →</span></a>
+          <a class="table-row" href="project.html"><span class="project-name"><i class="project-symbol source-figma" aria-label="Top source: Figma" title="Top source: Figma">FG</i><span><strong>Design platform changes its AI training controls</strong><span>News project · Direction v1 · 9 sources</span></span></span><span class="table-cell"><span class="badge mint">Exported</span></span><span class="table-cell">Video</span><span class="table-cell">Aug 13</span><span class="table-cell">Open →</span></a>
+          <a class="table-row" href="project.html"><span class="project-name"><i class="project-symbol free-creation" aria-label="Free creation" title="Free creation">✦</i><span><strong>Three habits for verifying AI answers</strong><span>Free creation · Direction v3 · 5 materials</span></span></span><span class="table-cell"><span class="badge amber">Partly failed</span></span><span class="table-cell">X + Video</span><span class="table-cell">Aug 11</span><span class="table-cell">Open →</span></a>
+          <a class="table-row" href="project.html"><span class="project-name"><i class="project-symbol source-w3c" aria-label="Top source: W3C" title="Top source: W3C">W3</i><span><strong>Browser vendors propose local AI permissions</strong><span>News project · Direction v1 · 5 sources</span></span></span><span class="table-cell"><span class="badge">Draft</span></span><span class="table-cell">—</span><span class="table-cell">Aug 10</span><span class="table-cell">Open →</span></a>
+        </section>
+
+        <div class="section-head"><div><h3>Conversation drafts</h3><p>Exploratory chats that have not become formal projects yet.</p></div><span class="small faint">2 drafts</span></div>
+        <section class="grid grid-2">
+          <a class="card card-pad hover-card" href="chat.html"><div class="row-between"><span class="badge fill-amber no-dot">Draft conversation</span><span class="small faint">4h ago</span></div><h4 style="margin:15px 0 5px">Does AI search change how creators cite sources?</h4><p class="small muted">Topic and audience defined · core point still open</p></a>
+          <a class="card card-pad hover-card" href="chat.html"><div class="row-between"><span class="badge fill-amber no-dot">Draft conversation</span><span class="small faint">Aug 9</span></div><h4 style="margin:15px 0 5px">A simple explainer about local language models</h4><p class="small muted">One user link · no audience selected</p></a>
+        </section>
+      </main>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

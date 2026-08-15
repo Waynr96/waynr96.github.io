@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Set up your first channel · CreatorPilot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="onboarding-shell" data-page="onboarding" data-auth="true">
+    <header class="onboarding-top">
+      <a class="brand" href="login.html"><span class="brand-mark"></span><span>CreatorPilot</span></a>
+      <div class="row" style="gap:14px"><span class="small muted">Quick setup</span><a class="text-link" href="index.html">Skip for now</a></div>
+    </header>
+    <section class="onboarding-main">
+      <p class="eyebrow">Personalize your news desk</p>
+      <h1>What will you create about first?</h1>
+      <p>A channel keeps its own topics, event history and source preferences. You can create more channels later.</p>
+
+      <div class="grid grid-2" data-choice-group>
+        <label class="card card-solid template-card selected">
+          <input type="radio" name="template" checked>
+          <span class="check-dot">✓</span>
+          <div class="template-visual"></div>
+          <h3>AI & Technology</h3>
+          <p>Product launches, model updates, companies, research and the creator economy.</p>
+          <div class="choice-meta"><span class="badge coral">Recommended</span><span class="badge sky">English sources</span></div>
+        </label>
+        <label class="card card-solid template-card">
+          <input type="radio" name="template">
+          <span class="check-dot">✓</span>
+          <div class="template-visual football"></div>
+          <h3>Football Transfers</h3>
+          <p>Official club updates, reliable reporters and clearly labelled transfer rumours.</p>
+          <div class="choice-meta"><span class="badge mint">Controlled pilot</span><span class="badge sky">English sources</span></div>
+        </label>
+      </div>
+
+      <div class="card card-solid card-pad" style="margin-top:20px">
+        <div class="grid grid-2">
+          <div class="field">
+            <label for="topics">Companies, people or topics</label>
+            <input class="input" id="topics" value="OpenAI, Anthropic, Google DeepMind, AI agents">
+            <span class="hint">Separate topics with commas. You can edit this later.</span>
+          </div>
+          <div class="field">
+            <label for="language">Default output language</label>
+            <select class="select" id="language"><option>English</option><option>简体中文</option></select>
+            <span class="hint">Interface and output language can be changed independently.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sticky-actions">
+        <p>We'll use these preferences to rank event recommendations. Nothing is published automatically.</p>
+        <div class="actions"><a class="btn btn-primary" href="index.html">Create my channel <span>→</span></a></div>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
