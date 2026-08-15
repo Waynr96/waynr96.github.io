@@ -125,6 +125,50 @@ function mountInteractions() {
     });
   });
 
+  const outputSelector = document.querySelector("[data-output-selector]");
+  if (outputSelector) {
+    const outputPanels = document.querySelectorAll("[data-output-panel]");
+    const outputBadge = document.querySelector("[data-output-badge]");
+    const outputActionCopy = document.querySelector("[data-output-action-copy]");
+    const outputConfirm = document.querySelector("[data-output-confirm]");
+    const outputStates = {
+      x: {
+        badge: "X Post selected",
+        action: "Generates editable X copy with its source record. You can review the post before publishing.",
+        confirm: "Confirm 12 credits & generate →",
+        href: "x-delivery.html"
+      },
+      video: {
+        badge: "Video selected",
+        action: "The first stage generates the script only. Captions and shot suggestions wait for your script confirmation.",
+        confirm: "Confirm 36 credits & generate →",
+        href: "video-delivery.html"
+      }
+    };
+
+    const applyOutputState = (outputType) => {
+      const state = outputStates[outputType] || outputStates.video;
+      outputPanels.forEach((panel) => { panel.hidden = panel.dataset.outputPanel !== outputType; });
+      if (outputBadge) {
+        outputBadge.textContent = state.badge;
+        outputBadge.classList.toggle("fill-mint", outputType === "x");
+        outputBadge.classList.toggle("fill-coral", outputType !== "x");
+      }
+      if (outputActionCopy) outputActionCopy.textContent = state.action;
+      if (outputConfirm) {
+        outputConfirm.textContent = state.confirm;
+        outputConfirm.href = state.href;
+      }
+    };
+
+    outputSelector.querySelectorAll("[data-output-type]").forEach((card) => {
+      card.addEventListener("click", () => applyOutputState(card.dataset.outputType));
+    });
+
+    const initialOutput = outputSelector.querySelector("[data-output-type] input:checked")?.closest("[data-output-type]")?.dataset.outputType || "video";
+    applyOutputState(initialOutput);
+  }
+
   document.querySelectorAll("[data-tabs]").forEach((tabs) => {
     const scope = tabs.closest("[data-tab-scope]") || document;
     tabs.querySelectorAll("[data-tab]").forEach((button) => {

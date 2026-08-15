@@ -487,6 +487,12 @@ button { color: inherit; }
 .choice-meta { display: flex; gap: 7px; margin-top: 16px; }
 .check-dot { position: absolute; top: 16px; right: 16px; display: grid; width: 21px; height: 21px; place-items: center; border: 1px solid var(--line); border-radius: 50%; color: white; font-size: 11px; }
 .choice-card:has(input:checked) .check-dot, .choice-card.selected .check-dot { border-color: var(--ink); background: var(--ink); }
+.content-mode-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.content-mode-card { min-height: 112px; padding: 18px 48px 18px 18px; }
+.content-mode-card:last-child { grid-column: 1 / -1; min-height: 96px; }
+.content-mode-card h3 { margin-bottom: 9px; font-size: 14px; line-height: 1.35; }
+.content-mode-card p { max-width: 34ch; font-size: 12px; line-height: 1.5; }
+.content-mode-card .check-dot { top: 17px; right: 17px; }
 
 .info-package { display: grid; gap: 10px; }
 .info-row { display: flex; align-items: center; gap: 12px; padding: 12px; border: 1px solid var(--line); border-radius: 10px; background: rgba(252,251,248,.65); }
@@ -499,7 +505,18 @@ button { color: inherit; }
 .sticky-actions { position: sticky; bottom: 18px; z-index: 12; display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-top: 30px; padding: 14px 16px; border: 1px solid var(--line); border-radius: 13px; background: rgba(252,251,248,.92); box-shadow: 0 12px 34px rgba(28,28,28,.08); backdrop-filter: blur(14px); }
 .sticky-actions p { margin: 0; color: var(--ink-muted); font-size: 11px; }
 .sticky-actions .actions { display: flex; gap: 8px; }
-
+.direction-actions { gap: 24px; padding: 16px 18px; }
+.direction-actions p { min-width: 0; max-width: 460px; line-height: 1.5; }
+.direction-actions .actions { flex: none; gap: 10px; }
+.direction-actions .btn { min-height: 44px; padding-inline: 16px; line-height: 1; white-space: nowrap; }
+.direction-actions .btn-secondary { min-width: 112px; }
+.direction-actions .btn-primary { min-width: 206px; }
+.output-actions { gap: 24px; padding: 16px 18px; }
+.output-actions p { min-width: 0; max-width: 430px; line-height: 1.5; }
+.output-actions .actions { flex: none; gap: 10px; }
+.output-actions .btn { min-height: 44px; padding-inline: 16px; line-height: 1; white-space: nowrap; }
+.output-actions .btn-secondary { min-width: 76px; }
+.output-actions .btn-primary { min-width: 232px; }
 .spec-tabs, .tabs { display: flex; gap: 4px; padding: 4px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface-soft); }
 .tab { flex: 1; min-height: 34px; padding: 0 10px; border: 0; border-radius: 7px; color: var(--ink-muted); background: transparent; cursor: pointer; font-size: 11px; font-weight: 600; }
 .tab.active { color: var(--ink); background: var(--surface); box-shadow: 0 1px 3px rgba(28,28,28,.08); }

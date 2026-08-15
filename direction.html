@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Confirm content direction · CreatorPilot</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20260816-direction-actions-v2">
 </head>
 <body>
   <div class="app-shell" data-page="direction">
@@ -40,10 +40,10 @@
             <div class="field"><label for="audience-detail">Audience detail</label><input class="input" id="audience-detail" value="Independent creators who use ChatGPT weekly and want practical examples without developer jargon"></div>
             <div class="field">
               <label>Content mode</label>
-              <div class="grid grid-3" data-choice-group>
-                <label class="choice-card card selected" style="padding:16px"><input type="radio" name="mode" checked><span class="check-dot">✓</span><h3 style="font-size:14px">Fact / explainer</h3><p>Factual claims should stay linked to sources.</p></label>
-                <label class="choice-card card" style="padding:16px"><input type="radio" name="mode"><span class="check-dot">✓</span><h3 style="font-size:14px">Opinion / commentary</h3><p>Arguments may be yours; supporting facts need sources.</p></label>
-                <label class="choice-card card" style="padding:16px"><input type="radio" name="mode"><span class="check-dot">✓</span><h3 style="font-size:14px">Fiction / creative</h3><p>Clearly presented as invented or creative.</p></label>
+              <div class="grid content-mode-grid" data-choice-group>
+                <label class="choice-card content-mode-card card selected"><input type="radio" name="mode" checked><span class="check-dot">✓</span><h3>Fact / explainer</h3><p>Factual claims should stay linked to sources.</p></label>
+                <label class="choice-card content-mode-card card"><input type="radio" name="mode"><span class="check-dot">✓</span><h3>Opinion / commentary</h3><p>Arguments may be yours; supporting facts need sources.</p></label>
+                <label class="choice-card content-mode-card card"><input type="radio" name="mode"><span class="check-dot">✓</span><h3>Fiction / creative</h3><p>Clearly presented as invented or creative.</p></label>
               </div>
             </div>
           </section>
@@ -66,7 +66,7 @@
           </aside>
         </div>
 
-        <div class="sticky-actions">
+        <div class="sticky-actions direction-actions">
           <p>Confirming creates a formal project. Later changes create a new direction version instead of overwriting this one.</p>
           <div class="actions"><button class="btn btn-secondary" data-toast="Draft saved">Save draft</button><a class="btn btn-primary" href="output-select.html">Confirm content direction →</a></div>
         </div>
