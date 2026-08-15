@@ -1,7 +1,7 @@
 const pageMeta = {
   home: { title: "Home", active: "home" },
-  events: { title: "All events", active: "home", crumb: "Home" },
-  event: { title: "Event details", active: "home", crumb: "Events" },
+  events: { title: "All events", active: "events", crumb: "Home" },
+  event: { title: "Event details", active: "events", crumb: "Events" },
   chat: { title: "Develop an idea", active: "chat", crumb: "Home" },
   direct: { title: "Start directly", active: "direct", crumb: "Home" },
   direction: { title: "Content direction", active: "home", crumb: "Create" },
@@ -16,6 +16,7 @@ const pageMeta = {
 
 const navItems = [
   ["home", "index.html", "⌂", "Home"],
+  ["events", "events.html", "◈", "Events"],
   ["history", "history.html", "◫", "Creation History"],
   ["channels", "channels.html", "◎", "Channels"],
   ["settings", "settings.html", "⌘", "Settings"]
